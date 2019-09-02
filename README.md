@@ -27,7 +27,7 @@ Using maven to package the jar
 ```bash
 mvn package
 ```
-Standalone executable jar is placed under target ProductCatalog-0.0.1-SNAPSHOT.jar. So you can run this jar:
+Standalone executable jar will be created under target ProductCatalog-0.0.1-SNAPSHOT.jar. So you can run this jar:
 
 ```bash
 java -jar .\target\ProductCatalog-0.0.1-SNAPSHOT.jar
@@ -54,7 +54,7 @@ Delete- Delete Product by Id
 http://localhost:8080/v1/products/{productId}
 
 Get- List of all products that belong to particular categoryId
-http://localhost:8080/v1/products/categories/1
+http://localhost:8080/v1/products/categories/{categoryId}
 
 Category APIs:
 
@@ -62,7 +62,7 @@ Post- Add Category
 http://localhost:8080/v1/categories
 
 Get- Get all categories
-http://localhost:8080/v1/categoriesategories
+http://localhost:8080/v1/categories
 
 Get- Get Category by Id
 http://localhost:8080/v1/categories/{categoryId}
@@ -71,7 +71,7 @@ Put- Update Category by Id
 http://localhost:8080/v1/categories/{categoryId}
 
 Delete- Delete Category by Id
-http://localhost:8080/v1/categories{categoryId}
+http://localhost:8080/v1/categories/{categoryId}
 ```
 
 ## Http Status
