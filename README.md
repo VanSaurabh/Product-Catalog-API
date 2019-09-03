@@ -80,8 +80,23 @@ http://localhost:8080/v1/categories/{categoryId}
 201 OK: CREATED - New resource has been created
 204 OK: NO_CONTENT - The resource has been deleted successfully
 400 Bad Request: BD_REQUEST - The request was invalid or cannot be served
+403 Forbidden - The user requestiong the request does not have the specified role
 404 Not Found: NOT_FOUND - There is no resource behind the URL
 500 Internal Server Error: The server encountered an unexpected condition
 ```
+## Authentication
+```python
+Created two users
+1. Admin - Role type: Admin
+   admin: password
+   YWRtaW46cGFzc3dvcmQ=
+2. User - Role type: User
+   user: password
+   dXNlcjpwYXNzd29yZA==
+
+All get requests can be performed by both users
+Add/Update/Delete opeartions can be performed by user who have admin role.
+```
+
 ## Note
 Kindly please add categories before adding products
