@@ -8,6 +8,7 @@ Java 8
 Maven
 RESTful API
 SpringBoot Framework
+Swagger
 Hibernate
 JPA
 Json
@@ -39,39 +40,39 @@ java -jar .\target\ProductCatalog-0.0.1-SNAPSHOT.jar
 Product APIs:
 
 Post- Add Product
-http://localhost:8080/v1/products
+http://localhost:8080/api/v1/products
 
 Get- Get all Products
-http://localhost:8080/v1/products
+http://localhost:8080/api/v1/products
 
 Get- Get Product by Id
-http://localhost:8080/v1/products/{productId}
+http://localhost:8080/api/v1/products/{productId}
 
 Put- Update Product by Id
-http://localhost:8080/v1/products/{productId}
+http://localhost:8080/api/v1/products/{productId}
 
 Delete- Delete Product by Id
-http://localhost:8080/v1/products/{productId}
+http://localhost:8080/api/v1/products/{productId}
 
 Get- List of all products that belong to particular categoryId
-http://localhost:8080/v1/products/categories/{categoryId}
+http://localhost:8080/api/v1/products/categories/{categoryId}
 
 Category APIs:
 
 Post- Add Category
-http://localhost:8080/v1/categories
+http://localhost:8080/api/v1/categories
 
 Get- Get all categories
-http://localhost:8080/v1/categories
+http://localhost:8080/api/v1/categories
 
 Get- Get Category by Id
-http://localhost:8080/v1/categories/{categoryId}
+http://localhost:8080/api/v1/categories/{categoryId}
 
 Put- Update Category by Id
-http://localhost:8080/v1/categories/{categoryId}
+http://localhost:8080/api/v1/categories/{categoryId}
 
 Delete- Delete Category by Id
-http://localhost:8080/v1/categories/{categoryId}
+http://localhost:8080/api/v1/categories/{categoryId}
 ```
 
 ## Http Status
@@ -96,6 +97,12 @@ Created two users
 
 All get requests can be performed by both users
 Add/Update/Delete opeartions can be performed by user who have admin role.
+```
+
+## Swagger
+```python
+Swagget doc URL: http://localhost:8080/api/v2/api-docs
+Swagger UI URL: http://localhost:8080/api/swagger-ui.html
 ```
 
 ## Note
